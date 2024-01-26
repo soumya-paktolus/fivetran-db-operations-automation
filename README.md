@@ -40,10 +40,17 @@ The project is organized into the following directories:
    cd databaseOperations-main
    ```
 
-3. Add your username as the user in place of "soumyarao" in config.ini to connect to your local database
+3. Add your username and some random password in place of "username" and "password" in config.ini to connect to your local database
 
    ```bash
    user = <your_username>
+   password = <your_password>
+   ```
+
+4. Download all the dependencies:
+
+   ```bash
+   pip install -r requirements.txt
    ```
 
 ## Test Execution
