@@ -70,7 +70,6 @@ def init_db(db_name, script_path):
     print("Database loaded!")
 
 
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     init_db('operations_db', '../database.sql')
 
