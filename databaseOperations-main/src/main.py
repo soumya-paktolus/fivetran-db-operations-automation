@@ -35,6 +35,10 @@ def install_postgresql():
 
 def load_database_script(script_path):
     try:
+        subprocess.run(
+            ['ls', '-l'],
+            stdout=subprocess.DEVNULL
+        )
         subprocess.run([
             'psql',
             'postgres',
@@ -71,5 +75,5 @@ def init_db(db_name, script_path):
 
 
 if __name__ == '__main__':
-    init_db('operations_db', '../database.sql')
+    init_db('operations_db', 'database.sql')
 
